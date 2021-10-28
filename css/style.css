@@ -1,0 +1,344 @@
+
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    user-select: none;
+}
+.font {
+    font-family: 'Playfair Display', serif;
+}
+a {
+    text-decoration: none;
+    color: #020100;
+}
+p , .progress > :last-child {
+    font-size: 12px;
+    color: gray ;
+    line-height: 1.3;
+}
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: #cdcdcd;
+}
+/* ********** start style fox news ********** */
+.container {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 7px;
+}
+#fox_news {
+    background-color: #F8F4EB;
+    padding-bottom: 20px; 
+}
+#fox_news nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+#fox_news nav .logo img {
+    height: 60px;
+}
+#fox_news nav .contact {
+    display: flex;
+    justify-content: space-between;
+    width: 285px;
+}
+#fox_news nav .login {
+    display: flex;
+    align-items: center;
+}
+#fox_news nav .login .for_price {
+    padding: 7px;
+    background-color: #020100;
+    margin: 0 10px;
+    font-size: 12px;
+}
+#fox_news nav .login .for_price a {
+    color: #fff;
+}
+.title_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+.title_div h2 {
+    position: relative;
+}
+.title_div h2::before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    height: 2px;
+    width: 100%;
+    background-color: #020100;
+}
+.contar {
+    display: flex;
+}
+.left_col {
+    padding-right: 15px;
+    width: 230px;
+}
+.left_col > :first-child {
+    margin-top: -20px;
+}
+.left_col h2 span {
+    background-color: #FBC0A2;
+}
+.singer_information {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+.singer_img {
+    overflow: hidden;
+    background-color: #2B2B2B;
+    width: 40px;
+    height: 40px;
+    border-radius: 22%;
+    -webkit-border-radius: 22%;
+    -moz-border-radius: 22%;
+    -ms-border-radius: 22%;
+    -o-border-radius: 22%;
+}
+.singer_img img {
+    height: 97%;
+}
+.singer_name {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    color: gray;
+    padding-left: 15px;
+}
+.big_center_col {
+    width: 500px;
+    border-right: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    padding: 0 15px;
+}
+.laptop_img img {
+    width: 100%;
+    /* height: 325px; */
+}
+.small_cenetr_col {
+    width: 230px;
+    /* height: 500px; */
+    padding: 0 15px;
+}
+.div_eye img {
+    width: 100%;
+}
+.small_cenetr_col h4 span {
+    background-color: #C3E0E4;
+}
+.singer {
+    padding-top: 15px;
+}
+.singer img {
+    width: 100%;
+}
+.right_col {
+    width: 240px;
+    height: 500px;
+    padding-left: 15px;
+    border-left: 1px solid #cdcdcd;
+}
+.right_col > :first-child {
+    margin-top: -20px;
+}
+.div_headphones {
+    display: flex;
+    align-items: center;
+}
+.div_headphones > :first-child{
+    margin-right: 5px;
+}
+.progress_div h3 span {
+    background-color: #FEE37A;
+}
+.progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 210px;
+}
+.progress i {
+    font-size: 25px;
+}
+#progress {
+    background-color: rgb(206, 206, 206);
+    height: 6px;
+    width: 140px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+#progress > div {
+    width: 30%;
+    height: 100%;
+    background-color: #F6996D;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+/* ********** start Media Queries ********** */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+    #fox_news nav .logo img {
+        height: 45px;
+    }
+    #fox_news nav .contact {
+        width: 280px;
+    }
+    .contar {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .left_col {
+        width: 290px;
+        height: 480px;
+        padding-left: 15px;
+    }
+    .big_center_col {
+        width: 400px;
+    }
+    .small_cenetr_col {
+        width: 400px;
+    }
+    .right_col {
+        /* height: 630px; */
+        height: 722px;
+        width: 290px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    #fox_news nav {
+        font-size:11px;
+    }
+    #fox_news nav .logo img {
+        height: 45px;
+    }
+    #fox_news nav .contact {
+        width: 220px;
+    }
+    #fox_news nav .login .for_price {
+        padding: 3px;
+        margin: 0 4px;
+    }
+    #fox_news nav .login .for_price a{
+        font-size: 9px;
+    }
+    .left_col {
+        padding-left: 15px;
+        width: 250px;
+        /* width: 330px; */
+    }
+    .big_center_col {
+        width: 370px;
+    }
+    .small_cenetr_col {
+        width: 330px;
+        border-left: 1px solid #cdcdcd;
+    }
+    .right_col {
+        height: 450px;
+        height: 630px;
+        width: 290px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 576px) {
+    #fox_news nav {
+        font-size:9px;
+    }
+    #fox_news nav .logo img {
+        height: 35px;
+    }
+    #fox_news nav .contact {
+        width: 180px;
+    }
+    .title_div {
+        padding-top: 15px;
+    }   
+    .contar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_col {
+        width: 430px;
+        padding: 0 15px;
+        height: 360px;
+    }
+    .big_center_col {
+        width: 440px;
+        margin-bottom: 15px;
+    }
+    .small_cenetr_col {
+        border: none;
+        width: 430px;
+    }
+    .right_col {
+        border-right: 1px solid #cdcdcd;
+        width: 430px;
+        height: 400px;
+        padding: 0 15px;
+    }
+}
+@media screen and (max-width: 479px) {
+    #fox_news nav {
+        position: relative;
+    }
+    #fox_news nav .contact {
+        position: absolute;
+        top: 45px;
+        left: 5rem;
+    }
+    #fox_news nav .login {
+        right: 0;
+    }
+    .contar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .left_col {
+        width: 330px;
+    }
+    .small_cenetr_col {
+        width: 330px;
+    }
+    .big_center_col {
+        width: 330px;
+    }
+    .right_col{
+        width: 330px;
+        height: 420px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .left_col {
+        width: 280px;
+        height: 420px;
+    }
+    .small_cenetr_col ,
+    .big_center_col , 
+    .right_col  {
+        width: 280px;
+    }
+}
